@@ -1,20 +1,20 @@
 {
-  "root": "libs/trader/utility/data-access",
-  "sourceRoot": "libs/trader/utility/data-access/src",
+  "root": "libs/alpaca/data-access",
+  "sourceRoot": "libs/alpaca/data-access/src",
   "projectType": "library",
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/trader/utility/data-access/**/*.ts"]
+        "lintFilePatterns": ["libs/alpaca/data-access/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/trader/utility/data-access"],
+      "outputs": ["coverage/libs/alpaca/data-access"],
       "options": {
-        "jestConfig": "libs/trader/utility/data-access/jest.config.js",
+        "jestConfig": "libs/alpaca/data-access/jest.config.js",
         "passWithNoTests": true
       }
     }

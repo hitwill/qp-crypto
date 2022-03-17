@@ -15,15 +15,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@qp-crypto/alpaca/data-access": ["libs/alpaca/data-access/src/index.ts"],
+      "@qp-crypto/alpaca/utility": ["libs/alpaca/utility/src/index.ts"],
       "@qp-crypto/shared/data-access": ["libs/shared/data-access/src/index.ts"],
       "@qp-crypto/shared/ui": ["libs/shared/ui/src/index.ts"],
-      "@qp-crypto/shared/utility": ["libs/shared/utility/src/index.ts"],
-      "@qp-crypto/trader/data-access/data-access": [
-        "libs/trader/data-access/data-access/src/index.ts"
-      ],
-      "@qp-crypto/trader/utility/data-access": [
-        "libs/trader/utility/data-access/src/index.ts"
-      ]
+      "@qp-crypto/shared/utility": ["libs/shared/utility/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

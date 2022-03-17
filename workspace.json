@@ -2,10 +2,10 @@
   "version": 2,
   "projects": {
     "alpaca": "apps/alpaca",
+    "alpaca-data-access": "libs/alpaca/data-access",
+    "alpaca-utility": "libs/alpaca/utility",
     "shared-data-access": "libs/shared/data-access",
     "shared-ui": "libs/shared/ui",
-    "shared-utility": "libs/shared/utility",
-    "trader-data-access-data-access": "libs/trader/data-access/data-access",
-    "trader-utility-data-access": "libs/trader/utility/data-access"
+    "shared-utility": "libs/shared/utility"
   }
 }

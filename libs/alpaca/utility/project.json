@@ -1,0 +1,23 @@
+{
+  "root": "libs/alpaca/utility",
+  "sourceRoot": "libs/alpaca/utility/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/alpaca/utility/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/alpaca/utility"],
+      "options": {
+        "jestConfig": "libs/alpaca/utility/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

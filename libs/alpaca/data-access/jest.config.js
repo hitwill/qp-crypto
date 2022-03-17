@@ -1,6 +1,6 @@
 module.exports = {
-  displayName: 'trader-utility-data-access',
-  preset: '../../../../jest.preset.js',
+  displayName: 'alpaca-data-access',
+  preset: '../../../jest.preset.js',
   globals: {
     'ts-jest': {
       tsconfig: '<rootDir>/tsconfig.spec.json',
@@ -10,5 +10,5 @@ module.exports = {
     '^.+\\.[tj]sx?$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../../../coverage/libs/trader/utility/data-access',
+  coverageDirectory: '../../../coverage/libs/alpaca/data-access',
 };
