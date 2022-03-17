@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "@alpacahq/alpaca-trade-api": "^2.12.1",
+    "@google-cloud/pubsub": "^2.19.0",
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
     "@nestjs/platform-express": "^8.0.0",
