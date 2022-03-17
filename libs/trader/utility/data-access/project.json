@@ -1,0 +1,23 @@
+{
+  "root": "libs/trader/utility/data-access",
+  "sourceRoot": "libs/trader/utility/data-access/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/trader/utility/data-access/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/trader/utility/data-access"],
+      "options": {
+        "jestConfig": "libs/trader/utility/data-access/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

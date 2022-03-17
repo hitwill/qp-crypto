@@ -1,6 +1,11 @@
 {
   "version": 2,
   "projects": {
-    "trader": "apps/trader"
+    "shared-data-access": "libs/shared/data-access",
+    "shared-ui": "libs/shared/ui",
+    "shared-utility": "libs/shared/utility",
+    "trader": "apps/trader",
+    "trader-data-access-data-access": "libs/trader/data-access/data-access",
+    "trader-utility-data-access": "libs/trader/utility/data-access"
   }
 }
