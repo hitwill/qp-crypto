@@ -1,16 +1,16 @@
 {
-  "root": "apps/trader",
-  "sourceRoot": "apps/trader/src",
+  "root": "apps/alpaca",
+  "sourceRoot": "apps/alpaca/src",
   "projectType": "application",
   "targets": {
     "build": {
       "executor": "@nrwl/node:webpack",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/trader",
-        "main": "apps/trader/src/main.ts",
-        "tsConfig": "apps/trader/tsconfig.app.json",
-        "assets": ["apps/trader/src/assets"]
+        "outputPath": "dist/apps/alpaca",
+        "main": "apps/alpaca/src/main.ts",
+        "tsConfig": "apps/alpaca/tsconfig.app.json",
+        "assets": ["apps/alpaca/src/assets"]
       },
       "configurations": {
         "production": {
@@ -19,8 +19,8 @@
           "inspect": false,
           "fileReplacements": [
             {
-              "replace": "apps/trader/src/environments/environment.ts",
-              "with": "apps/trader/src/environments/environment.prod.ts"
+              "replace": "apps/alpaca/src/environments/environment.ts",
+              "with": "apps/alpaca/src/environments/environment.prod.ts"
             }
           ]
         }
@@ -29,21 +29,21 @@
     "serve": {
       "executor": "@nrwl/node:node",
       "options": {
-        "buildTarget": "trader:build"
+        "buildTarget": "alpaca:build"
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/trader/**/*.ts"]
+        "lintFilePatterns": ["apps/alpaca/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/trader"],
+      "outputs": ["coverage/apps/alpaca"],
       "options": {
-        "jestConfig": "apps/trader/jest.config.js",
+        "jestConfig": "apps/alpaca/jest.config.js",
         "passWithNoTests": true
       }
     }
