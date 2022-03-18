@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Body, Controller, Get, Post } from '@nestjs/common';
 
 import { AppService } from './app.service';
 
@@ -6,8 +6,18 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get()
-  getData() {
-    return this.appService.getData();
+  @Post()
+  buy(@Body() message: PubsubMessage) {
+    return this.appService.buy();
+  }
+
+  @Get('get-account')
+  getAccount() {
+    return this.appService.getAccount();
+  }
+
+  @Post()
+  sell(@Body() message: PubsubMessage) {
+    return this.appService.sell();
   }
 }
