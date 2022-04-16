@@ -5,6 +5,7 @@
     "alpaca-data-access": "libs/alpaca/data-access",
     "alpaca-utility": "libs/alpaca/utility",
     "shared-data-access": "libs/shared/data-access",
+    "shared-data-access-imap": "libs/shared/data-access/imap",
     "shared-ui": "libs/shared/ui",
     "shared-utility": "libs/shared/utility"
   }

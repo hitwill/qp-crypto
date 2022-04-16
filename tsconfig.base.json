@@ -1,6 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "resolveJsonModule": true,
     "esModuleInterop": true,
     "rootDir": ".",
     "sourceMap": true,
@@ -19,6 +20,9 @@
       "@qp-crypto/alpaca/data-access": ["libs/alpaca/data-access/src/index.ts"],
       "@qp-crypto/alpaca/utility": ["libs/alpaca/utility/src/index.ts"],
       "@qp-crypto/shared/data-access": ["libs/shared/data-access/src/index.ts"],
+      "@qp-crypto/shared/data-access/imap": [
+        "libs/shared/data-access/imap/src/index.ts"
+      ],
       "@qp-crypto/shared/ui": ["libs/shared/ui/src/index.ts"],
       "@qp-crypto/shared/utility": ["libs/shared/utility/src/index.ts"]
     }

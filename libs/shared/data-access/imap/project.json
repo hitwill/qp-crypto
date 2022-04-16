@@ -1,0 +1,23 @@
+{
+  "root": "libs/shared/data-access/imap",
+  "sourceRoot": "libs/shared/data-access/imap/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/data-access/imap/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/data-access/imap"],
+      "options": {
+        "jestConfig": "libs/shared/data-access/imap/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
